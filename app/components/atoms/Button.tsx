@@ -17,7 +17,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
 
-  const baseStyles = 'inline-flex items-center justify-center font-bold rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
+  const baseStyles = 'inline-flex items-center justify-center font-bold rounded-full transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer';
 
   const variants = {
     primary: "bg-sage-600 text-ivory-50 hover:bg-sage-700 hover:shadow-lg focus:ring-sage-500",
