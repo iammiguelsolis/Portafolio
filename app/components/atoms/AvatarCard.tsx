@@ -42,22 +42,18 @@ export default function AvatarCard() {
   return (
     <motion.div
       style={{ perspective: 1000 }}
-      className="w-full max-w-sm mx-auto h-full flex items-center justify-center" // Centrado
+      className="w-full max-w-sm mx-auto h-full flex items-center justify-center"
     >
       <motion.div
         onMouseMove={onMouseMove}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         style={{ rotateX, rotateY }}
-        // LIMPIEZA AQUÍ: Quitamos shadow-2xl, rounded-3xl, overflow-hidden y bordes.
-        // Ahora es solo un contenedor invisible del tamaño de la imagen.
         className="relative aspect-square w-full cursor-pointer z-10"
         whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
       >
         
-        {/* ELIMINADO: El div del gradiente overlay */}
 
-        {/* LIMPIEZA AQUÍ: Quitamos 'bg-forest-900' para que sea transparente */}
         <div className="relative h-full w-full z-10">
           <AnimatePresence mode="wait">
             <motion.div
@@ -72,7 +68,6 @@ export default function AvatarCard() {
                  src={avatarImages[currentImageIndex]} 
                  alt={`Miguel Solis avatar ${currentImageIndex + 1}`}
                  fill
-                 // 'object-contain' asegura que se vea la imagen completa sin recortarse
                  className="object-contain contrast-110 pixelated drop-shadow-2xl" 
                  priority={currentImageIndex === 0}
                />
@@ -80,7 +75,6 @@ export default function AvatarCard() {
           </AnimatePresence>
         </div>
         
-        {/* Badge de ubicación */}
         <div className="absolute bottom-4 left-0 right-0 flex justify-center z-30">
              <span className="bg-forest-900/80 backdrop-blur-md text-ivory-50 px-3 py-1 rounded-full text-xs font-mono border border-white/20 flex items-center gap-2 shadow-lg">
                <span className="relative flex h-2 w-2">
