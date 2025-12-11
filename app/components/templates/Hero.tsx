@@ -36,10 +36,10 @@ export default function Hero() {
                Miguel Solis
             </h1>
 
-            <div className="h-16 md:h-20 flex items-center text-3xl md:text-5xl font-bold">
+            <div className="h-24 md:h-28 flex items-center text-3xl md:text-5xl font-bold">
                <span className="text-forest-700 mr-3">{"I'm a"}</span>
                
-               <span className="text-transparent bg-clip-text bg-gradient-to-r from-coffee-500 to-blush-500">
+               <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-coffee-500 to-blush-500 pb-2">
                  <TypewriterText 
                     words={[
                       "Software Engineer",
@@ -71,15 +71,15 @@ export default function Hero() {
              className="flex flex-col sm:flex-row gap-6 items-start sm:items-center pt-4"
           >
             <div className="flex gap-4">
-              <Button variant="primary" size="lg">Contratame</Button>
-              <Button variant="outline" size="lg">Descargar CV</Button>
+              <Button variant="primary" size="lg">Contact Me</Button>
+              <Button variant="outline" size="lg">Download CV</Button>
             </div>
             
             <div className="hidden sm:block w-px h-12 bg-sage-300 mx-2"></div>
             
             <div className="flex gap-4 text-forest-700">
-               <a href="#" className="hover:text-sage-600 transition-colors hover:scale-110 transform"><Github size={24}/></a>
-               <a href="#" className="hover:text-coffee-600 transition-colors hover:scale-110 transform"><Linkedin size={24}/></a>
+               <a href="#" className="hover:text-blush-600 transition-colors hover:scale-110 transform"><Github size={24}/></a>
+               <a href="#" className="hover:text-blush-600 transition-colors hover:scale-110 transform"><Linkedin size={24}/></a>
                <a href="#" className="hover:text-blush-600 transition-colors hover:scale-110 transform"><Instagram size={24}/></a>
             </div>
           </motion.div>

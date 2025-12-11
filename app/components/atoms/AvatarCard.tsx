@@ -42,7 +42,7 @@ export default function AvatarCard() {
   return (
     <motion.div
       style={{ perspective: 1000 }}
-      className="w-full max-w-sm mx-auto h-full flex items-center justify-center"
+      className="w-full max-w-xl mx-auto h-full flex items-center justify-center"
     >
       <motion.div
         onMouseMove={onMouseMove}
