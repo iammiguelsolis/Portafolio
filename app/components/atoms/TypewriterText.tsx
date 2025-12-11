@@ -51,10 +51,8 @@ export default function TypewriterText({
 
   return (
     <div className={`inline-flex items-center ${className}`}>
-      {/* El texto que cambia */}
       <span>{text}</span>
-      
-      {/* La barrita (Cursor) animada */}
+    
       <motion.span
         animate={{ opacity: [1, 0] }}
         transition={{ duration: 0.8, repeat: Infinity, ease: "linear" }}

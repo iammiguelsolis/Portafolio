@@ -36,10 +36,10 @@ export default function Hero() {
                Miguel Solis
             </h1>
 
-            <div className="h-24 md:h-28 flex items-center text-3xl md:text-5xl font-bold">
+            <div className="h-16 md:h-20 flex items-center text-3xl md:text-5xl font-bold">
                <span className="text-forest-700 mr-3">{"I'm a"}</span>
                
-               <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-coffee-500 to-blush-500 pb-2">
+               <span className="text-transparent bg-clip-text bg-gradient-to-r from-coffee-500 to-blush-500">
                  <TypewriterText 
                     words={[
                       "Software Engineer",
