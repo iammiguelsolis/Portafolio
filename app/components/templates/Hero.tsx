@@ -85,7 +85,7 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+        <div className="hidden lg:flex order-1 lg:order-2 justify-center lg:justify-end">
           <PixelArtAvatar />
         </div>
 
