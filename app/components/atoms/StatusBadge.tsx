@@ -13,7 +13,7 @@ export default function StatusBadge({
         group 
         inline-flex items-center 
         border-2 border-sage-600
-        py-2 px-5 hover:px-10
+        py-2 px-5 hover:px-8
         rounded-full 
         text-sage-700 text-xs font-bold tracking-widest uppercase
         shadow-lg shadow-forest-900/20
