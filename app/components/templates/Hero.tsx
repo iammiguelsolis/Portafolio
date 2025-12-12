@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import StatusBadge from "@/app/components/atoms/StatusBadge";
 import Button from "@/app/components/atoms/Button";
 import TypewriterText from "@/app/components/atoms/TypewriterText";
-import PixelArtAvatar from "@/app/components/atoms/PixelArtAvatar";
+import ChristmasPixelArtAvatar from "@/app/components/atoms/ChristmasPixelArtAvatar";
 import { Github, Linkedin, Instagram } from "lucide-react";
 
 export default function Hero() {
@@ -97,7 +97,7 @@ export default function Hero() {
         </div>
 
         <div className="hidden lg:flex order-1 lg:order-2 justify-center lg:justify-end">
-          <PixelArtAvatar />
+          <ChristmasPixelArtAvatar />
         </div>
 
       </div>

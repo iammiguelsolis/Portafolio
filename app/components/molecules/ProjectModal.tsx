@@ -71,7 +71,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
             {/* Close button */}
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 z-10 p-2 bg-white/90 hover:bg-sage-100 rounded-full transition-colors shadow-md"
+              className="absolute top-4 right-4 z-10 p-2 bg-white/90 hover:bg-sage-100 rounded-full transition-colors shadow-md cursor-pointer"
             >
               <X className="w-5 h-5 text-forest-900" />
             </button>

@@ -107,7 +107,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             {/* Ver más button */}
             <button
               onClick={() => setIsModalOpen(true)}
-              className="flex items-center justify-center gap-1.5 px-3 py-2 bg-sage-100 hover:bg-sage-200 text-forest-700 font-medium rounded-xl transition-colors text-sm"
+              className="flex items-center justify-center gap-1.5 px-3 py-2 bg-sage-100 hover:bg-sage-200 text-forest-700 font-medium rounded-xl transition-colors text-sm cursor-pointer"
             >
               <Eye className="w-4 h-4" />
               Ver más
