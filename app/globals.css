@@ -111,8 +111,6 @@ section[id] {
   --color-muted: var(--muted);
   --color-border: var(--border);
 
-  /* ESCALAS COMPLETAS EXPORTADAS A TAILWIND */
-
   /* Ahora puedes usar: bg-ivory-100, text-ivory-900 */
   --color-ivory-50: var(--color-ivory-50);
   --color-ivory-100: var(--color-ivory-100);
