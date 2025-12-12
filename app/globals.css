@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,9 +13,10 @@ section[id] {
 
   /* 1. IVORY (Tus neutros cálidos) 
      Base original: #E9E6E4 (aprox Ivory-200) */
-  --color-ivory-50:  #fbfaf9;
+  --color-ivory-50: #fbfaf9;
   --color-ivory-100: #f5f2f0;
-  --color-ivory-200: #e9e6e4; /* Tu color base */
+  --color-ivory-200: #e9e6e4;
+  /* Tu color base */
   --color-ivory-300: #dcd8d5;
   --color-ivory-400: #c5bfba;
   --color-ivory-500: #a8a09a;
@@ -25,10 +27,11 @@ section[id] {
 
   /* 2. BLUSH (Rosas suaves)
      Base original: #EBCDC4 (aprox Blush-300) */
-  --color-blush-50:  #fcf6f5;
+  --color-blush-50: #fcf6f5;
   --color-blush-100: #f9ebe6;
   --color-blush-200: #f4dcd6;
-  --color-blush-300: #ebcdc4; /* Tu color base */
+  --color-blush-300: #ebcdc4;
+  /* Tu color base */
   --color-blush-400: #dfb2a6;
   --color-blush-500: #cf9384;
   --color-blush-600: #b86e5c;
@@ -38,11 +41,12 @@ section[id] {
 
   /* 3. COFFEE (Marrones tierra)
      Base original: #D5B09C (aprox Coffee-400) */
-  --color-coffee-50:  #fbf7f5;
+  --color-coffee-50: #fbf7f5;
   --color-coffee-100: #f5ede9;
   --color-coffee-200: #ebdcd3;
   --color-coffee-300: #e0c6b7;
-  --color-coffee-400: #d5b09c; /* Tu color base */
+  --color-coffee-400: #d5b09c;
+  /* Tu color base */
   --color-coffee-500: #c29279;
   --color-coffee-600: #a67258;
   --color-coffee-700: #855740;
@@ -51,12 +55,13 @@ section[id] {
 
   /* 4. SAGE (Verdes grisáceos)
      Base original: #7E9693 (aprox Sage-500) */
-  --color-sage-50:  #f2f5f4;
+  --color-sage-50: #f2f5f4;
   --color-sage-100: #e3e9e8;
   --color-sage-200: #ccd6d4;
   --color-sage-300: #b0c0be;
   --color-sage-400: #96aca9;
-  --color-sage-500: #7e9693; /* Tu color base */
+  --color-sage-500: #7e9693;
+  /* Tu color base */
   --color-sage-600: #627a77;
   --color-sage-700: #4b605e;
   --color-sage-800: #374746;
@@ -64,7 +69,7 @@ section[id] {
 
   /* 5. FOREST (Verdes profundos/Petrol)
      Base original: #204045 (aprox Forest-900) */
-  --color-forest-50:  #ebf0f1;
+  --color-forest-50: #ebf0f1;
   --color-forest-100: #d4e0e2;
   --color-forest-200: #b0c6ca;
   --color-forest-300: #86a6ad;
@@ -73,14 +78,16 @@ section[id] {
   --color-forest-600: #325158;
   --color-forest-700: #273f45;
   --color-forest-800: #1e2f33;
-  --color-forest-900: #204045; /* Tu color base (muy oscuro) */
+  --color-forest-900: #204045;
+  /* Tu color base (muy oscuro) */
 
   /* 6. AMBER (Amarillo dorado para acentos - Timeline) */
-  --color-amber-50:  #fffbeb;
+  --color-amber-50: #fffbeb;
   --color-amber-100: #fef3c7;
   --color-amber-200: #fde68a;
   --color-amber-300: #fcd34d;
-  --color-amber-400: #fbbf24; /* Amarillo dorado principal */
+  --color-amber-400: #fbbf24;
+  /* Amarillo dorado principal */
   --color-amber-500: #f59e0b;
   --color-amber-600: #d97706;
   --color-amber-700: #b45309;
@@ -91,7 +98,7 @@ section[id] {
   /* Usamos tonos específicos de las escalas de arriba */
   --background: var(--color-ivory-50);
   --foreground: var(--color-forest-900);
-  
+
   --accent: var(--color-sage-600);
   --muted: var(--color-coffee-300);
   --border: var(--color-sage-200);
@@ -106,7 +113,7 @@ section[id] {
   --color-border: var(--border);
 
   /* ESCALAS COMPLETAS EXPORTADAS A TAILWIND */
-  
+
   /* Ahora puedes usar: bg-ivory-100, text-ivory-900 */
   --color-ivory-50: var(--color-ivory-50);
   --color-ivory-100: var(--color-ivory-100);
@@ -185,7 +192,7 @@ section[id] {
     /* Invertimos roles para modo oscuro */
     --background: var(--color-forest-900);
     --foreground: var(--color-ivory-50);
-    
+
     --accent: var(--color-blush-400);
     --muted: var(--color-sage-700);
     --border: var(--color-sage-800);
@@ -196,4 +203,19 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, sans-serif;
+  position: relative;
+}
+
+/* Subtle noise texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.08;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
