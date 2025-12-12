@@ -153,7 +153,7 @@ export default function About({
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute -bottom-4 -right-4 px-4 py-2 bg-forest-900 text-ivory-50 rounded-xl font-semibold shadow-lg"
               >
-                💼 Activo
+                📖 Estudiando
               </motion.div>
             </div>
           </motion.div>
